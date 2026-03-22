@@ -37,16 +37,19 @@ body{
      display:inline-flex;
      position:fixed;
      height:50px;
-     width:100%; 
-     margin-top:-2px;
+     width:77%; 
+     margin-top:4px;
      justify-content: space-evenly;
      background-color:white;
      z-index: 1001;
+     margin-left: 290px;
+     border-radius: 8px;
+     border:2px solid black;
 }
 .class2{
     margin:5px; 
     height:40px;
-    width:170px;
+    width:140px;
     border: 3px solid;
     border-radius: 5px;
     font-weight: bolder;
@@ -157,20 +160,19 @@ body{
     position: fixed;
     height:64px;
     width:70px;
-    bottom:10px;
-    left:13px;
-    border: 1px solid white;
+    top:10px;
+    left:5px;
 
 }
 #id4{
     position: fixed;
     height:54px;
     width:90px;
-    bottom:5px;
-    left:88px;
-    font-size: 47px;
+    top:20px;
+    left:70px;
+    font-size: 42px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(222, 174, 52);
+    color:rgb(252, 235, 137);
 
 }
 #usdinr:hover {
@@ -240,7 +242,7 @@ body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Target the class directly - make sure there is a DOT at the start */
+
 .coin-icon {
     cursor: pointer !important;
     display: inline-block !important;
@@ -249,35 +251,33 @@ body{
     z-index: 1000 !important;
 }
 
-/* This will show you if the CSS is even loading */
 .coin-icon:hover {
     outline: 4px solid red; 
     transform: scale(1.5);
 }
 
-/* Price/Change Colors */
+
 .up { color: #016134 !important; } 
 .down { color: #f31b1b !important; }
 
 
 .suggestion-box {
     position: absolute;
-    top: 75px; 
-    left: 1100px; /* Matches your #input margin */
-    width: 200px; 
+    top: 275px; 
+    left: 100px;
+    width: 300px; 
     background: white;
     border: 3px solid goldenrod;
     border-radius: 8px;
     
-    /* FIX: Show roughly 5 items, then scroll */
-    max-height: 225px; 
+    max-height: 235px; 
     overflow-y: auto;
     
     z-index: 2000;
     display: none;
 }
 
-/* Scrollbar styling to make it look clean */
+
 .suggestion-box::-webkit-scrollbar {
     width: 6px;
 }
@@ -293,9 +293,10 @@ body{
     font-weight: bold;
     border-bottom: 1px solid #eee;
     display: flex;
-    align-items: center;
+    align-items:end;
     gap: 10px;
-    height: 45px; /* Fixed height for consistent 5-item view */
+    font-size: 25px;
+    height: 40px;
 }
 
 .suggestion-item:hover {
@@ -354,10 +355,10 @@ body{
 #footer {
   margin-top: 200px;
   padding: 45px;
-  width: 82%;
-  margin-left: 100px;;
+  width: 92%;
+  margin-left: 20px;;
 
-  background-color:rgb(31, 75, 2);
+  background-color:#ebe483;
   border-radius: 25px;
   border: 2px solid goldenrod;
 
@@ -365,22 +366,23 @@ body{
   text-align: center;
   background-size: cover;
   transition: background-image 0.6s ease-in-out;
-  height: 400px;
+  height: 200px;
 }
 #terms{
   margin-top: 280px;
-  height:160px;
-  width:1175px;
+  height:140px;
+  width:1310px;
   background-color: crimson;
   margin-left: -40px;
   border-radius: 30px;;
+  margin-top: 102px;
 }
 #con{
   margin-top: -130px;
   height:130px;
   width:1275px;
   color:white;
-  margin-left: -90px;
+  margin-left: -30px;
   font-size: 32px;
 }
 #use{
@@ -448,12 +450,12 @@ body{
   display: flex;
   justify-content: center;
   gap: 160px;
-  margin-top: -550px;
+  margin-top: -370px;
 }
 
 #social_links img {
-  width: 230px;
-  height: 250px;
+  width: 120px;
+  height: 120px;
   cursor: pointer;
   transition: transform 0.2s ease, opacity 0.2s ease;
   border: 3px solid crimson;
